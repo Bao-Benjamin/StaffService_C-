@@ -130,3 +130,4 @@ C:\Users\COMPUTER\StaffServices\obj\Debug\net8.0\refint\StaffServices.dll
 C:\Users\COMPUTER\StaffServices\obj\Debug\net8.0\StaffServices.pdb
 C:\Users\COMPUTER\StaffServices\obj\Debug\net8.0\StaffServices.genruntimeconfig.cache
 C:\Users\COMPUTER\StaffServices\obj\Debug\net8.0\ref\StaffServices.dll
+C:\Users\COMPUTER\StaffServices\obj\Debug\net8.0\StaffServices.sourcelink.json

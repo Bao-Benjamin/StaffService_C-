@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<StaffsContext>(options => options.UseMySQL(builder.Configuration.GetConnectionString("DBconnection")));
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepositoty>();
-
+builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,6 +42,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+app.MapControllers();
 app.MapGet("/employees", async ([FromServices] IEmployeeRepository employeeRepository) =>
 {
     try

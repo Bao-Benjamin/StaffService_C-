@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using StaffServices.Models;
 using StaffServices.Repositories;
-[Route("api/[controller]")]
+[Route("api123/employees")]
 [ApiController]
 public class EmployeeController : ControllerBase
 {
@@ -13,18 +13,18 @@ public class EmployeeController : ControllerBase
     }
 
     [HttpGet]
-    // public async Task<IActionResult> GetEmployees()
-    // {
-    //     try
-    //     {
-    //         var employees = await employeeRepository.GetAllEmployees();
-    //         return Ok(employees);
-    //     }
-    //     catch (Exception)
-    //     {
-    //         return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
-    //     }
-    // }
+    public async Task<IActionResult> GetEmployees()
+    {
+        try
+        {
+            var employees = await employeeRepository.GetEmployees();
+            return Ok(employees);
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+        }
+    }
 
 
     [HttpGet("{id:int}")]
