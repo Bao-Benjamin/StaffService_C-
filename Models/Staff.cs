@@ -18,4 +18,6 @@ public partial class Staff
     public int? GenderId { get; set; }
 
     public int? DepartmentId { get; set; }
+
+    public Department department {get; set;}
 }

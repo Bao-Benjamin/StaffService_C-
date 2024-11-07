@@ -4331,11 +4331,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\COMPUTER\\StaffServices\\StaffServices.csproj",
+      "projectUniqueName": "c:\\Users\\COMPUTER\\StaffServices\\StaffServices.csproj",
       "projectName": "StaffServices",
-      "projectPath": "C:\\Users\\COMPUTER\\StaffServices\\StaffServices.csproj",
+      "projectPath": "c:\\Users\\COMPUTER\\StaffServices\\StaffServices.csproj",
       "packagesPath": "C:\\Users\\COMPUTER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\COMPUTER\\StaffServices\\obj\\",
+      "outputPath": "c:\\Users\\COMPUTER\\StaffServices\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\COMPUTER\\AppData\\Roaming\\NuGet\\NuGet.Config",

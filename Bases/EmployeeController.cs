@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using StaffServices.Models;
 using StaffServices.Repositories;
-[Route("api123/employees")]
+[Route("api123  /employees")]
 [ApiController]
 public class EmployeeController : ControllerBase
 {

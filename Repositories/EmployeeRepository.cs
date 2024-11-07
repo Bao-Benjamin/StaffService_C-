@@ -30,8 +30,8 @@ public class EmployeeRepositoty : IEmployeeRepository
     public async Task<Staff> GetEmployee(int id)
     {
 
-        return await staffsContext.Staff.Include(e => e.DepartmentId).FirstOrDefaultAsync(e=>e.EmployeeId == id );
-
+        // return await staffsContext.Staff.Include(e => e.DepartmentId).FirstOrDefaultAsync(e=>e.EmployeeId == id );
+    return await staffsContext.Staff.Include(e=> e.department).FirstOrDefaultAsync(e=>e.EmployeeId == id);
 
     }
       public async Task<Staff> UpdateEmployee(Staff staff)
